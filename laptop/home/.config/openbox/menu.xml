@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="root-menu" label="Openbox 3">
+  <item label="terminator (w+enter)">
+    <action name="Execute">
+      <command>terminator</command>
+    </action>
+  </item>
+  <item label="subl           (w+s)">
+    <action name="Execute">
+      <command>subl</command>
+    </action>
+  </item>
+  <item label="firefox        (w+f)">
+    <action name="Execute">
+      <command>firefox</command>
+    </action>
+  </item>
+  <item label="thunar         (w+t)">
+    <action name="Execute">
+      <command>thunar</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="teams">
+    <action name="Execute">
+      <command>apulse teams</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <separator/>
+  <item label="datagrip">
+    <action name="Execute">
+      <command>datagrip</command>
+    </action>
+  </item>
+  <item label="clion">
+    <action name="Execute">
+      <command>clion</command>
+    </action>
+  </item>
+  <item label="filezilla">
+    <action name="Execute">
+      <command>filezilla</command>
+    </action>
+  </item>
+  <separator/>
+  <item label="autokey">
+    <action name="Execute">
+      <command>autokey-gtk -c</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="lxde">
+    <action name="Execute">
+      <command>lxappearance</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="openbox">
+    <action name="Execute">
+      <command>obconf</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <separator/>
+  <item label="reconfigure">
+    <action name="reconfigure" />
+  </item>
+  <separator/>
+  <item label="reboot">
+      <action name="Execute">
+          <prompt>
+              Êtes-vous certain de vouloir redémarrer ?
+          </prompt>
+          <execute>
+              sudo systemctl reboot
+          </execute>
+      </action>
+  </item>
+  <item label="shutdown">
+      <action name="Execute">
+          <prompt>
+              Êtes-vous certain de vouloir éteindre ?
+          </prompt>
+          <execute>
+              sudo systemctl poweroff
+          </execute>
+      </action>
+  </item>
+  <item label="log out">
+    <action name="Exit">
+      <prompt>yes</prompt>
+    </action>
+  </item>
+</menu>
+
+</openbox_menu>

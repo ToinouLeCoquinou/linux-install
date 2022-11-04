@@ -1,0 +1,10 @@
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+autokey-gtk &
+picom -b --config .config/picom/picom.conf
+feh --bg-scale --no-fehbg .local/share/backgrounds/abstract-color-stroke.jpg
+xinput set-prop 11 326 1
+xinput set-prop 11 322 1
