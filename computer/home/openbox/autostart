@@ -1,0 +1,13 @@
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+
+nitrogen --restore &
+picom -b --config .config/picom/picom.conf
+autokey-gtk &
+udiskie &
+openrgb -p red
+sh .config/scripts/polybar.sh &
+dunst -config ~/.config/dunst/dunstrc &

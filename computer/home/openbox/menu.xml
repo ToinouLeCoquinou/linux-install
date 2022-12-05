@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="root-menu" label="Openbox 3">
+  <item label="terminator">
+    <action name="Execute">
+      <command>terminator</command>
+    </action>
+  </item>
+  <item label="subl">
+    <action name="Execute">
+      <command>subl</command>
+    </action>
+  </item>
+  <item label="edge">
+    <action name="Execute">
+      <command>microsoft-edge-stable</command>
+    </action>
+  </item>
+  <item label="thunar">
+    <action name="Execute">
+      <command>thunar</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="calculator">
+    <action name="Execute">
+      <command>qalculate-gtk</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="openoffice">
+    <action name="Execute">
+      <command>ooffice -base</command>
+    </action>
+  </item>
+  <item label="gimp">
+    <action name="Execute">
+      <command>gimp</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="deadbeef">
+    <action name="Execute">
+      <command>deadbeef</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="molotov">
+    <action name="Execute">
+      <command>molotov</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="authy">
+    <action name="Execute">
+      <command>authy</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <separator/>
+  <item label="thunderbird">
+    <action name="Execute">
+      <command>thunderbird</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="discord">
+    <action name="Execute">
+      <command>apulse discord</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="signal">
+    <action name="Execute">
+      <command>signal-desktop</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="telegram">
+    <action name="Execute">
+      <command>telegram-desktop</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="teams">
+    <action name="Execute">
+      <command>apulse teams</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="whatsapp">
+    <action name="Execute">
+      <command>whatsapp-for-linux</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <separator/>
+  <item label="clion">
+    <action name="Execute">
+      <command>clion</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="pycharm">
+    <action name="Execute">
+      <command>pycharm</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="idea">
+    <action name="Execute">
+      <command>idea</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="datagrip">
+    <action name="Execute">
+      <command>datagrip</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="fleet">
+    <action name="Execute">
+      <command>fleet</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <separator/>
+  <item label="reconfigure">
+    <action name="Reconfigure" />
+  </item>
+  <item label="autokey">
+    <action name="Execute">
+      <command>autokey-gtk -c</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="lxde">
+    <action name="Execute">
+      <command>lxappearance</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="openbox">
+    <action name="Execute">
+      <command>obconf</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="nitrogen">
+    <action name="Execute">
+      <command>nitrogen</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <separator/>
+  <item label="reboot">
+      <action name="Execute">
+          <prompt>
+              Êtes-vous certain de vouloir redémarrer ?
+          </prompt>
+          <execute>
+              sudo systemctl reboot
+          </execute>
+      </action>
+  </item>
+  <item label="shutdown">
+      <action name="Execute">
+          <prompt>
+              Êtes-vous certain de vouloir éteindre ?
+          </prompt>
+          <execute>
+              sudo systemctl poweroff
+          </execute>
+      </action>
+  </item>
+  <item label="log out">
+    <action name="Exit">
+      <prompt>yes</prompt>
+    </action>
+  </item>
+</menu>
+
+</openbox_menu>
