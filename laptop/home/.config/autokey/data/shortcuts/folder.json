@@ -1,11 +1,9 @@
 {
     "type": "folder",
     "title": "shortcuts",
-    "modes": [
-        3
-    ],
-    "usageCount": 32,
-    "showInTrayMenu": false,
+    "modes": [],
+    "usageCount": 201,
+    "showInTrayMenu": true,
     "abbreviation": {
         "abbreviations": [],
         "backspace": true,
@@ -15,10 +13,8 @@
         "wordChars": "[\\w]"
     },
     "hotkey": {
-        "modifiers": [
-            "<ctrl>"
-        ],
-        "hotKey": "<f7>"
+        "modifiers": [],
+        "hotKey": null
     },
     "filter": {
         "regex": null,

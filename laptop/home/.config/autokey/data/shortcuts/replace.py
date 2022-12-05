@@ -1,2 +1,3 @@
 # Enter script code
-keyboard.send_keys("<ctrl>+h")
+if store.get_global_value("state") == 1:
+    keyboard.send_keys("<ctrl>+h")

@@ -4,7 +4,8 @@
 # to run user-specific things.
 #
 autokey-gtk &
-picom -b --config .config/picom/picom.conf
-feh --bg-scale --no-fehbg .local/share/backgrounds/abstract-color-stroke.jpg
-xinput set-prop 11 326 1
-xinput set-prop 11 322 1
+picom -b --config .config/picom/picom.conf &
+feh --bg-scale --no-fehbg .local/share/backgrounds/abstract-color-stroke.jpg &
+xinput set-prop 11 326 1 &
+xinput set-prop 11 322 1 &
+polybar -c .config/polybar/config.ini &

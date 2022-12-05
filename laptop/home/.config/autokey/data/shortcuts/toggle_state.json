@@ -1,11 +1,11 @@
 {
     "type": "script",
-    "description": "save",
+    "description": "toggle_state",
     "store": {},
     "modes": [
         3
     ],
-    "usageCount": 5,
+    "usageCount": 109,
     "prompt": false,
     "omitTrigger": false,
     "showInTrayMenu": false,
@@ -19,9 +19,12 @@
     },
     "hotkey": {
         "modifiers": [
-            "<ctrl>"
+            "<alt>",
+            "<ctrl>",
+            "<shift>",
+            "<super>"
         ],
-        "hotKey": "u"
+        "hotKey": " "
     },
     "filter": {
         "regex": null,
